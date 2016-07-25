@@ -8,11 +8,15 @@
 
 import UIKit
 
+// MARK: AuthenticationStoryboard
 extension UIViewController {
   static func signInViewController() -> SignInViewController {
-    return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(SignInViewController)) as! SignInViewController
+    return UIStoryboard.authenticationStoryboard().instantiateViewControllerWithIdentifier(String(SignInViewController)) as! SignInViewController
   }
+}
 
+// MARK: MainStoryboard
+extension UIViewController {
   static func containerViewController() -> ContainerViewController {
     return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(ContainerViewController)) as! ContainerViewController
   }

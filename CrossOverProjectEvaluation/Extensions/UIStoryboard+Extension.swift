@@ -12,4 +12,8 @@ extension UIStoryboard {
   class func mainStoryboard() -> UIStoryboard {
     return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
   }
+
+  class func authenticationStoryboard() -> UIStoryboard {
+    return UIStoryboard(name: "Authentication", bundle: NSBundle.mainBundle())
+  }
 }
