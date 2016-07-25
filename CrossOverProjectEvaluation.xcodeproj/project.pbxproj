@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D1D59BA0D9D4166DB2BC170 /* Pods_CrossOverProjectEvaluationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD6EEB2AF82C74415DB4586 /* Pods_CrossOverProjectEvaluationTests.framework */; };
+		5E13D85F7537A74CE4BCD4E0 /* Pods_CrossOverProjectEvaluation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70A457B0DAA8011ABA874FD8 /* Pods_CrossOverProjectEvaluation.framework */; };
+		649797412CE3C02D53904A56 /* Pods_CrossOverProjectEvaluationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C37854A6ADBD7B075EB964 /* Pods_CrossOverProjectEvaluationUITests.framework */; };
+		EC8BC4321D45BBF2005D637C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4311D45BBF2005D637C /* AppDelegate.swift */; };
+		EC8BC4341D45BBF2005D637C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4331D45BBF2005D637C /* ViewController.swift */; };
+		EC8BC4371D45BBF2005D637C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8BC4351D45BBF2005D637C /* Main.storyboard */; };
+		EC8BC4391D45BBF2005D637C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8BC4381D45BBF2005D637C /* Assets.xcassets */; };
+		EC8BC43C1D45BBF2005D637C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8BC43A1D45BBF2005D637C /* LaunchScreen.storyboard */; };
+		EC8BC4611D45C3A7005D637C /* BaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4601D45C3A7005D637C /* BaseSpec.swift */; };
+		EC8BC4621D45C3A7005D637C /* BaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4601D45C3A7005D637C /* BaseSpec.swift */; };
+		EC8BC4651D45C417005D637C /* KIF+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4641D45C417005D637C /* KIF+Extensions.swift */; };
+		EC8BC4671D45C429005D637C /* BaseUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4661D45C429005D637C /* BaseUISpec.swift */; };
+		EC8BC46A1D45C517005D637C /* NSUserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4691D45C517005D637C /* NSUserDefaults+Extension.swift */; };
+		EC8BC46D1D45C552005D637C /* Object+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC46B1D45C552005D637C /* Object+Extension.swift */; };
+		EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC46C1D45C552005D637C /* Realm+Extension.swift */; };
+		EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC46F1D45C55E005D637C /* UIStoryboard+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC8BC4431D45BBF2005D637C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC8BC4261D45BBF2005D637C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC8BC42D1D45BBF2005D637C;
+			remoteInfo = CrossOverProjectEvaluation;
+		};
+		EC8BC45A1D45C1E4005D637C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC8BC4261D45BBF2005D637C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC8BC42D1D45BBF2005D637C;
+			remoteInfo = CrossOverProjectEvaluation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		133F48F236F9E4EB2D8B1068 /* Pods-CrossOverProjectEvaluation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverProjectEvaluation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverProjectEvaluation/Pods-CrossOverProjectEvaluation.debug.xcconfig"; sourceTree = "<group>"; };
+		1B0FD34D47C6B730DB225729 /* Pods-CrossOverProjectEvaluation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverProjectEvaluation.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverProjectEvaluation/Pods-CrossOverProjectEvaluation.release.xcconfig"; sourceTree = "<group>"; };
+		61E8F2F6F81DCAA1FEB53202 /* Pods-CrossOverProjectEvaluationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverProjectEvaluationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverProjectEvaluationTests/Pods-CrossOverProjectEvaluationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		678BFF1A5EB7DB03CC53878E /* Pods-CrossOverProjectEvaluationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverProjectEvaluationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverProjectEvaluationUITests/Pods-CrossOverProjectEvaluationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70A457B0DAA8011ABA874FD8 /* Pods_CrossOverProjectEvaluation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrossOverProjectEvaluation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		767496B8E45D7FC8FBF42160 /* Pods-CrossOverProjectEvaluationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverProjectEvaluationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverProjectEvaluationTests/Pods-CrossOverProjectEvaluationTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FA93630929ED464A6A734A5 /* Pods-CrossOverProjectEvaluationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrossOverProjectEvaluationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrossOverProjectEvaluationUITests/Pods-CrossOverProjectEvaluationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFD6EEB2AF82C74415DB4586 /* Pods_CrossOverProjectEvaluationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrossOverProjectEvaluationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C37854A6ADBD7B075EB964 /* Pods_CrossOverProjectEvaluationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrossOverProjectEvaluationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8BC42E1D45BBF2005D637C /* CrossOverProjectEvaluation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossOverProjectEvaluation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8BC4311D45BBF2005D637C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC8BC4331D45BBF2005D637C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC8BC4361D45BBF2005D637C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC8BC4381D45BBF2005D637C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC8BC43B1D45BBF2005D637C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC8BC43D1D45BBF2005D637C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8BC4421D45BBF2005D637C /* CrossOverProjectEvaluationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossOverProjectEvaluationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8BC4481D45BBF2005D637C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8BC4551D45C1E4005D637C /* CrossOverProjectEvaluationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossOverProjectEvaluationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8BC4591D45C1E4005D637C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8BC4601D45C3A7005D637C /* BaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSpec.swift; sourceTree = "<group>"; };
+		EC8BC4641D45C417005D637C /* KIF+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIF+Extensions.swift"; sourceTree = "<group>"; };
+		EC8BC4661D45C429005D637C /* BaseUISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUISpec.swift; sourceTree = "<group>"; };
+		EC8BC4691D45C517005D637C /* NSUserDefaults+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		EC8BC46B1D45C552005D637C /* Object+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+Extension.swift"; sourceTree = "<group>"; };
+		EC8BC46C1D45C552005D637C /* Realm+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Extension.swift"; sourceTree = "<group>"; };
+		EC8BC46F1D45C55E005D637C /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC8BC42B1D45BBF2005D637C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E13D85F7537A74CE4BCD4E0 /* Pods_CrossOverProjectEvaluation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8BC43F1D45BBF2005D637C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1D59BA0D9D4166DB2BC170 /* Pods_CrossOverProjectEvaluationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8BC4521D45C1E4005D637C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649797412CE3C02D53904A56 /* Pods_CrossOverProjectEvaluationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AD1EFABAE90795EEE7A0F9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				133F48F236F9E4EB2D8B1068 /* Pods-CrossOverProjectEvaluation.debug.xcconfig */,
+				1B0FD34D47C6B730DB225729 /* Pods-CrossOverProjectEvaluation.release.xcconfig */,
+				61E8F2F6F81DCAA1FEB53202 /* Pods-CrossOverProjectEvaluationTests.debug.xcconfig */,
+				767496B8E45D7FC8FBF42160 /* Pods-CrossOverProjectEvaluationTests.release.xcconfig */,
+				8FA93630929ED464A6A734A5 /* Pods-CrossOverProjectEvaluationUITests.debug.xcconfig */,
+				678BFF1A5EB7DB03CC53878E /* Pods-CrossOverProjectEvaluationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93DE9BD0AF22AE779135600E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70A457B0DAA8011ABA874FD8 /* Pods_CrossOverProjectEvaluation.framework */,
+				AFD6EEB2AF82C74415DB4586 /* Pods_CrossOverProjectEvaluationTests.framework */,
+				D8C37854A6ADBD7B075EB964 /* Pods_CrossOverProjectEvaluationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC8BC4251D45BBF2005D637C = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4301D45BBF2005D637C /* CrossOverProjectEvaluation */,
+				EC8BC4451D45BBF2005D637C /* CrossOverProjectEvaluationTests */,
+				EC8BC4561D45C1E4005D637C /* CrossOverProjectEvaluationUITests */,
+				EC8BC42F1D45BBF2005D637C /* Products */,
+				4AD1EFABAE90795EEE7A0F9E /* Pods */,
+				93DE9BD0AF22AE779135600E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC8BC42F1D45BBF2005D637C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC42E1D45BBF2005D637C /* CrossOverProjectEvaluation.app */,
+				EC8BC4421D45BBF2005D637C /* CrossOverProjectEvaluationTests.xctest */,
+				EC8BC4551D45C1E4005D637C /* CrossOverProjectEvaluationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC8BC4301D45BBF2005D637C /* CrossOverProjectEvaluation */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4681D45C4F2005D637C /* Extensions */,
+				EC8BC4311D45BBF2005D637C /* AppDelegate.swift */,
+				EC8BC4331D45BBF2005D637C /* ViewController.swift */,
+				EC8BC4351D45BBF2005D637C /* Main.storyboard */,
+				EC8BC4381D45BBF2005D637C /* Assets.xcassets */,
+				EC8BC43A1D45BBF2005D637C /* LaunchScreen.storyboard */,
+				EC8BC43D1D45BBF2005D637C /* Info.plist */,
+			);
+			path = CrossOverProjectEvaluation;
+			sourceTree = "<group>";
+		};
+		EC8BC4451D45BBF2005D637C /* CrossOverProjectEvaluationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC45F1D45C389005D637C /* Supports */,
+				EC8BC4481D45BBF2005D637C /* Info.plist */,
+			);
+			path = CrossOverProjectEvaluationTests;
+			sourceTree = "<group>";
+		};
+		EC8BC4561D45C1E4005D637C /* CrossOverProjectEvaluationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4631D45C3FA005D637C /* Support */,
+				EC8BC4591D45C1E4005D637C /* Info.plist */,
+			);
+			path = CrossOverProjectEvaluationUITests;
+			sourceTree = "<group>";
+		};
+		EC8BC45F1D45C389005D637C /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4601D45C3A7005D637C /* BaseSpec.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		EC8BC4631D45C3FA005D637C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4641D45C417005D637C /* KIF+Extensions.swift */,
+				EC8BC4661D45C429005D637C /* BaseUISpec.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EC8BC4681D45C4F2005D637C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4691D45C517005D637C /* NSUserDefaults+Extension.swift */,
+				EC8BC46B1D45C552005D637C /* Object+Extension.swift */,
+				EC8BC46C1D45C552005D637C /* Realm+Extension.swift */,
+				EC8BC46F1D45C55E005D637C /* UIStoryboard+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC8BC42D1D45BBF2005D637C /* CrossOverProjectEvaluation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8BC44B1D45BBF2005D637C /* Build configuration list for PBXNativeTarget "CrossOverProjectEvaluation" */;
+			buildPhases = (
+				AEB4D6B1811C6EEBABD2EC4D /* [CP] Check Pods Manifest.lock */,
+				EC8BC42A1D45BBF2005D637C /* Sources */,
+				EC8BC42B1D45BBF2005D637C /* Frameworks */,
+				EC8BC42C1D45BBF2005D637C /* Resources */,
+				601C97E7C8FD935EB0471198 /* [CP] Embed Pods Frameworks */,
+				F8A3C681BD49D42C0490B3A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrossOverProjectEvaluation;
+			productName = CrossOverProjectEvaluation;
+			productReference = EC8BC42E1D45BBF2005D637C /* CrossOverProjectEvaluation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC8BC4411D45BBF2005D637C /* CrossOverProjectEvaluationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8BC44E1D45BBF2005D637C /* Build configuration list for PBXNativeTarget "CrossOverProjectEvaluationTests" */;
+			buildPhases = (
+				6380FD5BD59AC187E2DC94FC /* [CP] Check Pods Manifest.lock */,
+				EC8BC43E1D45BBF2005D637C /* Sources */,
+				EC8BC43F1D45BBF2005D637C /* Frameworks */,
+				EC8BC4401D45BBF2005D637C /* Resources */,
+				6FE7D751C55B821A30EADFB3 /* [CP] Embed Pods Frameworks */,
+				0E2705F6533C72D8499D8D7C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC8BC4441D45BBF2005D637C /* PBXTargetDependency */,
+			);
+			name = CrossOverProjectEvaluationTests;
+			productName = CrossOverProjectEvaluationTests;
+			productReference = EC8BC4421D45BBF2005D637C /* CrossOverProjectEvaluationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC8BC4541D45C1E4005D637C /* CrossOverProjectEvaluationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8BC45E1D45C1E4005D637C /* Build configuration list for PBXNativeTarget "CrossOverProjectEvaluationUITests" */;
+			buildPhases = (
+				694E6AEFBCEE3BB6A08D0C09 /* [CP] Check Pods Manifest.lock */,
+				EC8BC4511D45C1E4005D637C /* Sources */,
+				EC8BC4521D45C1E4005D637C /* Frameworks */,
+				EC8BC4531D45C1E4005D637C /* Resources */,
+				06BB6AB09C050D24185B2422 /* [CP] Embed Pods Frameworks */,
+				B6E076E204C76041F8D0E497 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC8BC45B1D45C1E4005D637C /* PBXTargetDependency */,
+			);
+			name = CrossOverProjectEvaluationUITests;
+			productName = CrossOverProjectEvaluationUITests;
+			productReference = EC8BC4551D45C1E4005D637C /* CrossOverProjectEvaluationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC8BC4261D45BBF2005D637C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TanVu;
+				TargetAttributes = {
+					EC8BC42D1D45BBF2005D637C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EC8BC4411D45BBF2005D637C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EC8BC42D1D45BBF2005D637C;
+					};
+					EC8BC4541D45C1E4005D637C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EC8BC42D1D45BBF2005D637C;
+					};
+				};
+			};
+			buildConfigurationList = EC8BC4291D45BBF2005D637C /* Build configuration list for PBXProject "CrossOverProjectEvaluation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC8BC4251D45BBF2005D637C;
+			productRefGroup = EC8BC42F1D45BBF2005D637C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC8BC42D1D45BBF2005D637C /* CrossOverProjectEvaluation */,
+				EC8BC4411D45BBF2005D637C /* CrossOverProjectEvaluationTests */,
+				EC8BC4541D45C1E4005D637C /* CrossOverProjectEvaluationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC8BC42C1D45BBF2005D637C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8BC43C1D45BBF2005D637C /* LaunchScreen.storyboard in Resources */,
+				EC8BC4391D45BBF2005D637C /* Assets.xcassets in Resources */,
+				EC8BC4371D45BBF2005D637C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8BC4401D45BBF2005D637C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8BC4531D45C1E4005D637C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06BB6AB09C050D24185B2422 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrossOverProjectEvaluationUITests/Pods-CrossOverProjectEvaluationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E2705F6533C72D8499D8D7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrossOverProjectEvaluationTests/Pods-CrossOverProjectEvaluationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		601C97E7C8FD935EB0471198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrossOverProjectEvaluation/Pods-CrossOverProjectEvaluation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6380FD5BD59AC187E2DC94FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		694E6AEFBCEE3BB6A08D0C09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE7D751C55B821A30EADFB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrossOverProjectEvaluationTests/Pods-CrossOverProjectEvaluationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB4D6B1811C6EEBABD2EC4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E076E204C76041F8D0E497 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrossOverProjectEvaluationUITests/Pods-CrossOverProjectEvaluationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A3C681BD49D42C0490B3A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrossOverProjectEvaluation/Pods-CrossOverProjectEvaluation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC8BC42A1D45BBF2005D637C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8BC46D1D45C552005D637C /* Object+Extension.swift in Sources */,
+				EC8BC46A1D45C517005D637C /* NSUserDefaults+Extension.swift in Sources */,
+				EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */,
+				EC8BC4341D45BBF2005D637C /* ViewController.swift in Sources */,
+				EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */,
+				EC8BC4321D45BBF2005D637C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8BC43E1D45BBF2005D637C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8BC4611D45C3A7005D637C /* BaseSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8BC4511D45C1E4005D637C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8BC4621D45C3A7005D637C /* BaseSpec.swift in Sources */,
+				EC8BC4651D45C417005D637C /* KIF+Extensions.swift in Sources */,
+				EC8BC4671D45C429005D637C /* BaseUISpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC8BC4441D45BBF2005D637C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC8BC42D1D45BBF2005D637C /* CrossOverProjectEvaluation */;
+			targetProxy = EC8BC4431D45BBF2005D637C /* PBXContainerItemProxy */;
+		};
+		EC8BC45B1D45C1E4005D637C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC8BC42D1D45BBF2005D637C /* CrossOverProjectEvaluation */;
+			targetProxy = EC8BC45A1D45C1E4005D637C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC8BC4351D45BBF2005D637C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8BC4361D45BBF2005D637C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC8BC43A1D45BBF2005D637C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8BC43B1D45BBF2005D637C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC8BC4491D45BBF2005D637C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC8BC44A1D45BBF2005D637C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC8BC44C1D45BBF2005D637C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133F48F236F9E4EB2D8B1068 /* Pods-CrossOverProjectEvaluation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrossOverProjectEvaluation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TanVu.CrossOverProjectEvaluation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC8BC44D1D45BBF2005D637C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0FD34D47C6B730DB225729 /* Pods-CrossOverProjectEvaluation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrossOverProjectEvaluation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TanVu.CrossOverProjectEvaluation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC8BC44F1D45BBF2005D637C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E8F2F6F81DCAA1FEB53202 /* Pods-CrossOverProjectEvaluationTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CrossOverProjectEvaluationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TanVu.CrossOverProjectEvaluationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossOverProjectEvaluation.app/CrossOverProjectEvaluation";
+			};
+			name = Debug;
+		};
+		EC8BC4501D45BBF2005D637C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767496B8E45D7FC8FBF42160 /* Pods-CrossOverProjectEvaluationTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CrossOverProjectEvaluationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TanVu.CrossOverProjectEvaluationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossOverProjectEvaluation.app/CrossOverProjectEvaluation";
+			};
+			name = Release;
+		};
+		EC8BC45C1D45C1E4005D637C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA93630929ED464A6A734A5 /* Pods-CrossOverProjectEvaluationUITests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CrossOverProjectEvaluationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TanVu.CrossOverProjectEvaluationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossOverProjectEvaluation.app/CrossOverProjectEvaluation";
+			};
+			name = Debug;
+		};
+		EC8BC45D1D45C1E4005D637C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 678BFF1A5EB7DB03CC53878E /* Pods-CrossOverProjectEvaluationUITests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CrossOverProjectEvaluationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TanVu.CrossOverProjectEvaluationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossOverProjectEvaluation.app/CrossOverProjectEvaluation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC8BC4291D45BBF2005D637C /* Build configuration list for PBXProject "CrossOverProjectEvaluation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8BC4491D45BBF2005D637C /* Debug */,
+				EC8BC44A1D45BBF2005D637C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8BC44B1D45BBF2005D637C /* Build configuration list for PBXNativeTarget "CrossOverProjectEvaluation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8BC44C1D45BBF2005D637C /* Debug */,
+				EC8BC44D1D45BBF2005D637C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8BC44E1D45BBF2005D637C /* Build configuration list for PBXNativeTarget "CrossOverProjectEvaluationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8BC44F1D45BBF2005D637C /* Debug */,
+				EC8BC4501D45BBF2005D637C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8BC45E1D45C1E4005D637C /* Build configuration list for PBXNativeTarget "CrossOverProjectEvaluationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8BC45C1D45C1E4005D637C /* Debug */,
+				EC8BC45D1D45C1E4005D637C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC8BC4261D45BBF2005D637C /* Project object */;
+}
