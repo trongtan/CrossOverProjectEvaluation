@@ -6,6 +6,7 @@ def common_pods
   pod 'RealmSwift'
   pod 'SnapKit'
   pod 'SDCAlertView'
+  pod 'SlideMenuControllerSwift'
 end
 
 def testing_pods

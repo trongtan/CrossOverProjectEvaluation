@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+
+    let navigationController = window?.rootViewController as! UINavigationController
+    if true {
+      navigationController.redirectAfterAuthenticationAnimated(false)
+    }
+
     return true
   }
 

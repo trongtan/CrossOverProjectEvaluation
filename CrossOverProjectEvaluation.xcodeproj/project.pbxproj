@@ -23,6 +23,14 @@
 		EC8BC46D1D45C552005D637C /* Object+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC46B1D45C552005D637C /* Object+Extension.swift */; };
 		EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC46C1D45C552005D637C /* Realm+Extension.swift */; };
 		EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC46F1D45C55E005D637C /* UIStoryboard+Extension.swift */; };
+		EC8BC4751D45C724005D637C /* SignInSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4741D45C724005D637C /* SignInSpec.swift */; };
+		EC8BC4781D45C9A3005D637C /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4771D45C9A3005D637C /* ContainerViewController.swift */; };
+		EC8BC47A1D45CAA4005D637C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC4791D45CAA4005D637C /* MainViewController.swift */; };
+		EC8BC47C1D45CAC3005D637C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC47B1D45CAC3005D637C /* MenuViewController.swift */; };
+		EC8BC47E1D45CB9A005D637C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BC47D1D45CB9A005D637C /* UIViewController+Extension.swift */; };
+		EC9B88E11D45CCDB00F8433E /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B88E01D45CCDB00F8433E /* UINavigationController+Extension.swift */; };
+		EC9B88E31D45CD4900F8433E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B88E21D45CD4900F8433E /* SignInViewController.swift */; };
+		EC9B88E61D45D5D700F8433E /* HomeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B88E51D45D5D700F8433E /* HomeSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +78,14 @@
 		EC8BC46B1D45C552005D637C /* Object+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+Extension.swift"; sourceTree = "<group>"; };
 		EC8BC46C1D45C552005D637C /* Realm+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Extension.swift"; sourceTree = "<group>"; };
 		EC8BC46F1D45C55E005D637C /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		EC8BC4741D45C724005D637C /* SignInSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInSpec.swift; sourceTree = "<group>"; };
+		EC8BC4771D45C9A3005D637C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		EC8BC4791D45CAA4005D637C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EC8BC47B1D45CAC3005D637C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EC8BC47D1D45CB9A005D637C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		EC9B88E01D45CCDB00F8433E /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		EC9B88E21D45CD4900F8433E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		EC9B88E51D45D5D700F8433E /* HomeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +164,7 @@
 		EC8BC4301D45BBF2005D637C /* CrossOverProjectEvaluation */ = {
 			isa = PBXGroup;
 			children = (
+				EC8BC4761D45C984005D637C /* Controllers */,
 				EC8BC4681D45C4F2005D637C /* Extensions */,
 				EC8BC4311D45BBF2005D637C /* AppDelegate.swift */,
 				EC8BC4331D45BBF2005D637C /* ViewController.swift */,
@@ -171,6 +188,8 @@
 		EC8BC4561D45C1E4005D637C /* CrossOverProjectEvaluationUITests */ = {
 			isa = PBXGroup;
 			children = (
+				EC9B88E41D45D5C300F8433E /* Home */,
+				EC8BC4711D45C6D7005D637C /* Authentications */,
 				EC8BC4631D45C3FA005D637C /* Support */,
 				EC8BC4591D45C1E4005D637C /* Info.plist */,
 			);
@@ -201,8 +220,37 @@
 				EC8BC46B1D45C552005D637C /* Object+Extension.swift */,
 				EC8BC46C1D45C552005D637C /* Realm+Extension.swift */,
 				EC8BC46F1D45C55E005D637C /* UIStoryboard+Extension.swift */,
+				EC8BC47D1D45CB9A005D637C /* UIViewController+Extension.swift */,
+				EC9B88E01D45CCDB00F8433E /* UINavigationController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC8BC4711D45C6D7005D637C /* Authentications */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4741D45C724005D637C /* SignInSpec.swift */,
+			);
+			path = Authentications;
+			sourceTree = "<group>";
+		};
+		EC8BC4761D45C984005D637C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC8BC4771D45C9A3005D637C /* ContainerViewController.swift */,
+				EC8BC4791D45CAA4005D637C /* MainViewController.swift */,
+				EC8BC47B1D45CAC3005D637C /* MenuViewController.swift */,
+				EC9B88E21D45CD4900F8433E /* SignInViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC9B88E41D45D5C300F8433E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC9B88E51D45D5D700F8433E /* HomeSpec.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,10 +533,16 @@
 			files = (
 				EC8BC46D1D45C552005D637C /* Object+Extension.swift in Sources */,
 				EC8BC46A1D45C517005D637C /* NSUserDefaults+Extension.swift in Sources */,
+				EC9B88E11D45CCDB00F8433E /* UINavigationController+Extension.swift in Sources */,
+				EC8BC4781D45C9A3005D637C /* ContainerViewController.swift in Sources */,
 				EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */,
+				EC8BC47C1D45CAC3005D637C /* MenuViewController.swift in Sources */,
 				EC8BC4341D45BBF2005D637C /* ViewController.swift in Sources */,
 				EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */,
+				EC9B88E31D45CD4900F8433E /* SignInViewController.swift in Sources */,
 				EC8BC4321D45BBF2005D637C /* AppDelegate.swift in Sources */,
+				EC8BC47E1D45CB9A005D637C /* UIViewController+Extension.swift in Sources */,
+				EC8BC47A1D45CAA4005D637C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,8 +558,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9B88E61D45D5D700F8433E /* HomeSpec.swift in Sources */,
 				EC8BC4621D45C3A7005D637C /* BaseSpec.swift in Sources */,
 				EC8BC4651D45C417005D637C /* KIF+Extensions.swift in Sources */,
+				EC8BC4751D45C724005D637C /* SignInSpec.swift in Sources */,
 				EC8BC4671D45C429005D637C /* BaseUISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
