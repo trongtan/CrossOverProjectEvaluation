@@ -29,3 +29,33 @@ extension UIViewController {
     return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(MenuViewController)) as! MenuViewController
   }
 }
+
+// MARK: Utils funcs
+
+extension UIViewController {
+  func presentAlertTextField(title: String, message: String, titleButtonAction: String = "OK", textFieldPlaceHolder: String = "Enter text:", secureTextEntry: Bool = false, completion: ((String) -> Void)?) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+    let action = UIAlertAction(title: titleButtonAction, style: .Default) {
+      _ in
+      let textField = alert.textFields![0] as UITextField
+      completion?(textField.text!)
+    }
+
+    alert.addAction(action)
+    alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+      textField.placeholder = textFieldPlaceHolder
+      textField.secureTextEntry = secureTextEntry
+    })
+    presentViewController(alert, animated: true, completion: nil)
+  }
+
+  func presentAlert(title: String, message: String, completion: ((Void) -> Void)?) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+    let action = UIAlertAction(title: "OK", style: .Default) {
+      _ in
+      completion?()
+    }
+    alert.addAction(action)
+    presentViewController(alert, animated: true, completion: nil)
+  }
+}

@@ -28,9 +28,9 @@
 		EC9B88ED1D45F6CD00F8433E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9B88EC1D45F6CD00F8433E /* Main.storyboard */; };
 		EC9B88EF1D45F70200F8433E /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9B88EE1D45F70200F8433E /* Authentication.storyboard */; };
 		EC9B88F21D45F84E00F8433E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B88F11D45F84E00F8433E /* SignInViewController.swift */; };
-		EC9B88F71D45F87A00F8433E /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B88F41D45F87A00F8433E /* ContainerViewController.swift */; };
-		EC9B88F81D45F87A00F8433E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B88F51D45F87A00F8433E /* MainViewController.swift */; };
-		EC9B88F91D45F87A00F8433E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B88F61D45F87A00F8433E /* MenuViewController.swift */; };
+		ECFADDC41D47071100D8F01B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDC11D47071100D8F01B /* ContainerViewController.swift */; };
+		ECFADDC51D47071100D8F01B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDC21D47071100D8F01B /* MainViewController.swift */; };
+		ECFADDC61D47071100D8F01B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDC31D47071100D8F01B /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +83,9 @@
 		EC9B88EC1D45F6CD00F8433E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EC9B88EE1D45F70200F8433E /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		EC9B88F11D45F84E00F8433E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		EC9B88F41D45F87A00F8433E /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		EC9B88F51D45F87A00F8433E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		EC9B88F61D45F87A00F8433E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		ECFADDC11D47071100D8F01B /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		ECFADDC21D47071100D8F01B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ECFADDC31D47071100D8F01B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,9 +262,6 @@
 		EC9B88F01D45F82B00F8433E /* Authen */ = {
 			isa = PBXGroup;
 			children = (
-				EC9B88F41D45F87A00F8433E /* ContainerViewController.swift */,
-				EC9B88F51D45F87A00F8433E /* MainViewController.swift */,
-				EC9B88F61D45F87A00F8433E /* MenuViewController.swift */,
 				EC9B88F11D45F84E00F8433E /* SignInViewController.swift */,
 			);
 			path = Authen;
@@ -273,6 +270,9 @@
 		EC9B88F31D45F85200F8433E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ECFADDC11D47071100D8F01B /* ContainerViewController.swift */,
+				ECFADDC21D47071100D8F01B /* MainViewController.swift */,
+				ECFADDC31D47071100D8F01B /* MenuViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -557,16 +557,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9B88F21D45F84E00F8433E /* SignInViewController.swift in Sources */,
+				ECFADDC51D47071100D8F01B /* MainViewController.swift in Sources */,
 				EC8BC46D1D45C552005D637C /* Object+Extension.swift in Sources */,
+				ECFADDC61D47071100D8F01B /* MenuViewController.swift in Sources */,
 				EC8BC46A1D45C517005D637C /* NSUserDefaults+Extension.swift in Sources */,
 				EC9B88E11D45CCDB00F8433E /* UINavigationController+Extension.swift in Sources */,
-				EC9B88F91D45F87A00F8433E /* MenuViewController.swift in Sources */,
 				EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */,
 				EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */,
 				EC8BC4321D45BBF2005D637C /* AppDelegate.swift in Sources */,
-				EC9B88F71D45F87A00F8433E /* ContainerViewController.swift in Sources */,
 				EC8BC47E1D45CB9A005D637C /* UIViewController+Extension.swift in Sources */,
-				EC9B88F81D45F87A00F8433E /* MainViewController.swift in Sources */,
+				ECFADDC41D47071100D8F01B /* ContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
