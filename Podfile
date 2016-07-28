@@ -9,6 +9,7 @@ def common_pods
   pod 'SlideMenuControllerSwift'
   pod 'Firebase'
   pod 'ObjectMapper'
+  pod 'RATreeView'
 end
 
 def testing_pods

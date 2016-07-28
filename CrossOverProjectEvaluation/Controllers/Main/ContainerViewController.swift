@@ -23,7 +23,7 @@ class ContainerViewController: SlideMenuController {
   }
 
   private func configSlideMenu() {
-    self.mainViewController = UIViewController.personDataTableViewController()
+    self.mainViewController = UIViewController.tabBarViewController()
     self.leftViewController = UIViewController.menuViewController()
     self.closeLeft()
     setUpMenuViewController()
