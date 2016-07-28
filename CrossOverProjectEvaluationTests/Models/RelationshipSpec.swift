@@ -53,7 +53,7 @@ class RelationshipSpec: BaseSpec {
           expect(relationship?.name).to(equal(relationshipName))
           expect(relationship?.parentRawValue).to(equal(parentRelationship.id))
           expect(relationship?.personRawValue).to(equal(person.id))
-          expect(relationship?.path).to(equal("\(parentRelationship.id)-\(relationship!.id)"))
+          expect(relationship?.path).to(equal("\(parentRelationship.id)\(separatorCharactor)\(relationship!.id)"))
         }
       }
     }

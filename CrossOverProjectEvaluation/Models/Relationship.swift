@@ -11,6 +11,8 @@ import Realm
 import RealmSwift
 import ObjectMapper
 
+let separatorCharactor = "-"
+
 class Relationship: Object, Mappable {
   dynamic var id = 0
   dynamic var name = ""
@@ -18,8 +20,17 @@ class Relationship: Object, Mappable {
   dynamic var parentRawValue = 0
   dynamic var path = ""
 
-  var children: Results<Person> {
-    return Object.all(Person).filter("path BEGINSWITH %@", path)
+  var children: List<Relationship> {
+    let path = self.path + separatorCharactor
+    let relationships = Object.all(Relationship).filter("path BEGINSWITH %@", path)
+    let sameLevelChildrent = List<Relationship>()
+    let level = relationships.map { $0.path.componentsSeparatedByString(separatorCharactor).count }.minElement()
+    relationships.forEach {
+      if $0.path.componentsSeparatedByString(separatorCharactor).count == level {
+        sameLevelChildrent.append($0)
+      }
+    }
+    return sameLevelChildrent
   }
 
   required init() {
@@ -68,7 +79,7 @@ class Relationship: Object, Mappable {
     self.id = self.incrementaID()
     if let parent = parent {
       self.parentRawValue = parent.id
-      self.path = "\(parentRawValue)-\(id)"
+      self.path = "\(parent.path)\(separatorCharactor)\(id)"
     } else {
       self.path = "\(self.id)"
     }
