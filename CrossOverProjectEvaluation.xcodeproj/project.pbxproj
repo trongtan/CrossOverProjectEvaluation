@@ -44,6 +44,10 @@
 		ECFADDEA1D4A0CBE00D8F01B /* TreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDE81D4A0CBE00D8F01B /* TreeTableViewCell.swift */; };
 		ECFADDEB1D4A0CBE00D8F01B /* TreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFADDE91D4A0CBE00D8F01B /* TreeTableViewCell.xib */; };
 		ECFADDED1D4A0FD300D8F01B /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDEC1D4A0FD300D8F01B /* Relationship.swift */; };
+		ECFADDF01D4A130600D8F01B /* RelationshipSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDEF1D4A130500D8F01B /* RelationshipSpec.swift */; };
+		ECFADDF21D4A13F700D8F01B /* PersonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDF11D4A13F700D8F01B /* PersonBuilder.swift */; };
+		ECFADDF31D4A13FA00D8F01B /* PersonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDF11D4A13F700D8F01B /* PersonBuilder.swift */; };
+		ECFADDF51D4A19ED00D8F01B /* RelationshipBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDF41D4A19ED00D8F01B /* RelationshipBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,9 @@
 		ECFADDE81D4A0CBE00D8F01B /* TreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableViewCell.swift; sourceTree = "<group>"; };
 		ECFADDE91D4A0CBE00D8F01B /* TreeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeTableViewCell.xib; sourceTree = "<group>"; };
 		ECFADDEC1D4A0FD300D8F01B /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		ECFADDEF1D4A130500D8F01B /* RelationshipSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipSpec.swift; sourceTree = "<group>"; };
+		ECFADDF11D4A13F700D8F01B /* PersonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonBuilder.swift; sourceTree = "<group>"; };
+		ECFADDF41D4A19ED00D8F01B /* RelationshipBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +215,7 @@
 		EC8BC4451D45BBF2005D637C /* CrossOverProjectEvaluationTests */ = {
 			isa = PBXGroup;
 			children = (
+				ECFADDEE1D4A12F200D8F01B /* Models */,
 				EC8BC45F1D45C389005D637C /* Supports */,
 				EC8BC4481D45BBF2005D637C /* Info.plist */,
 			);
@@ -229,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				EC8BC4601D45C3A7005D637C /* BaseSpec.swift */,
+				ECFADDF11D4A13F700D8F01B /* PersonBuilder.swift */,
+				ECFADDF41D4A19ED00D8F01B /* RelationshipBuilder.swift */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -354,6 +364,14 @@
 				ECFADDE91D4A0CBE00D8F01B /* TreeTableViewCell.xib */,
 			);
 			path = TreeView;
+			sourceTree = "<group>";
+		};
+		ECFADDEE1D4A12F200D8F01B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECFADDEF1D4A130500D8F01B /* RelationshipSpec.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -666,6 +684,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFADDF21D4A13F700D8F01B /* PersonBuilder.swift in Sources */,
+				ECFADDF51D4A19ED00D8F01B /* RelationshipBuilder.swift in Sources */,
+				ECFADDF01D4A130600D8F01B /* RelationshipSpec.swift in Sources */,
 				EC8BC4611D45C3A7005D637C /* BaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,6 +695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECFADDF31D4A13FA00D8F01B /* PersonBuilder.swift in Sources */,
 				EC9B88E61D45D5D700F8433E /* HomeSpec.swift in Sources */,
 				EC8BC4621D45C3A7005D637C /* BaseSpec.swift in Sources */,
 				EC8BC4651D45C417005D637C /* KIF+Extensions.swift in Sources */,

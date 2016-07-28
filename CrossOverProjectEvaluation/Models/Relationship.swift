@@ -14,8 +14,13 @@ import ObjectMapper
 class Relationship: Object, Mappable {
   dynamic var id = 0
   dynamic var name = ""
+  dynamic var personRawValue = 0
   dynamic var parentRawValue = 0
   dynamic var path = ""
+
+  var children: Results<Person> {
+    return Object.all(Person).filter("path BEGINSWITH %@", path)
+  }
 
   required init() {
     super.init()
@@ -37,10 +42,43 @@ class Relationship: Object, Mappable {
     return "id"
   }
 
+  func incrementaID() -> Int{
+    let realm = try! Realm()
+    let RetNext: NSArray = Array(realm.objects(Relationship).sorted("id"))
+    let last = RetNext.lastObject
+    if RetNext.count > 0 {
+      let valor = last?.valueForKey("id") as? Int
+      return valor! + 1
+    } else {
+      return 1
+    }
+  }
+
   func mapping(map: Map) {
     id <- map["id"]
     name <- map["name"]
     parentRawValue <- map["parentRawValue"]
     path <- map["path"]
+  }
+
+  convenience init(name: String, person: Person, parent: Relationship?) {
+    self.init()
+    self.name = name
+    self.personRawValue = person.id
+    self.id = self.incrementaID()
+    if let parent = parent {
+      self.parentRawValue = parent.id
+      self.path = "\(parentRawValue)-\(id)"
+    } else {
+      self.path = "\(self.id)"
+    }
+  }
+
+  func addChild(child : Person) {
+//    self.children.append(child)
+  }
+
+  func removeChild(child : Person) {
+//    self.children = self.children.filter( {$0 !== child})
   }
 }
