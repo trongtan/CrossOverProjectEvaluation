@@ -1,5 +1,5 @@
 //
-//  Person.swift
+//  Relationship.swift
 //  CrossOverProjectEvaluation
 //
 //  Created by Tan Vu on 7/28/16.
@@ -11,13 +11,11 @@ import Realm
 import RealmSwift
 import ObjectMapper
 
-class Person: Object, Mappable {
+class Relationship: Object, Mappable {
   dynamic var id = 0
   dynamic var name = ""
-  dynamic var ssn = ""
-  dynamic var birthDate = NSDate()
-  dynamic var deathDate =  NSDate()
-  dynamic var sex = "Male"
+  dynamic var parentRawValue = 0
+  dynamic var path = ""
 
   required init() {
     super.init()
@@ -42,9 +40,7 @@ class Person: Object, Mappable {
   func mapping(map: Map) {
     id <- map["id"]
     name <- map["name"]
-    ssn <- map["ssn"]
-    birthDate <- (map["birthDate"], DateFormatterTransform(dateFormatter: TFDateFormatter.serverResponseFormatter))
-    deathDate <- (map["deathDate"], DateFormatterTransform(dateFormatter: TFDateFormatter.serverResponseFormatter))
-    sex <- map["sex"]
+    parentRawValue <- map["parentRawValue"]
+    path <- map["path"]
   }
 }

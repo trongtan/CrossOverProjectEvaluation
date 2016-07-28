@@ -43,6 +43,7 @@
 		ECFADDE51D49F54A00D8F01B /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDE41D49F54A00D8F01B /* NSDate+Extension.swift */; };
 		ECFADDEA1D4A0CBE00D8F01B /* TreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDE81D4A0CBE00D8F01B /* TreeTableViewCell.swift */; };
 		ECFADDEB1D4A0CBE00D8F01B /* TreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFADDE91D4A0CBE00D8F01B /* TreeTableViewCell.xib */; };
+		ECFADDED1D4A0FD300D8F01B /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDEC1D4A0FD300D8F01B /* Relationship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		ECFADDE41D49F54A00D8F01B /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		ECFADDE81D4A0CBE00D8F01B /* TreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableViewCell.swift; sourceTree = "<group>"; };
 		ECFADDE91D4A0CBE00D8F01B /* TreeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeTableViewCell.xib; sourceTree = "<group>"; };
+		ECFADDEC1D4A0FD300D8F01B /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				ECFADDDE1D49F21600D8F01B /* Person.swift */,
+				ECFADDEC1D4A0FD300D8F01B /* Relationship.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 				ECFADDE51D49F54A00D8F01B /* NSDate+Extension.swift in Sources */,
 				EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */,
 				EC8BC4321D45BBF2005D637C /* AppDelegate.swift in Sources */,
+				ECFADDED1D4A0FD300D8F01B /* Relationship.swift in Sources */,
 				ECFADDEA1D4A0CBE00D8F01B /* TreeTableViewCell.swift in Sources */,
 				EC8BC47E1D45CB9A005D637C /* UIViewController+Extension.swift in Sources */,
 				ECFADDDF1D49F21600D8F01B /* Person.swift in Sources */,
