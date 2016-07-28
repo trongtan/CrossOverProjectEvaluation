@@ -8,17 +8,28 @@
 
 import UIKit
 
+protocol PersonDetailsDateInputTableViewCellDelegate: class {
+  func personDetailsDateInputTableViewCell(cell: PersonDetailsDateInputTableViewCell, didChangeDateValue date: NSDate)
+}
+
 class PersonDetailsDateInputTableViewCell: UITableViewCell {
   @IBOutlet weak var customLabel: UILabel!
   @IBOutlet weak var dateTextField: UITextField!
-  weak var date: NSDate?
+  var date: NSDate? {
+    didSet {
+      dateTextField.text = date?.toDateString()
+      datePickerView.date = date ?? NSDate()
+    }
+  }
+
   private let datePickerView = UIDatePicker()
   private let dateFormatter = NSDateFormatter()
+
+  weak var delegate: PersonDetailsDateInputTableViewCellDelegate?
 
   override func awakeFromNib() {
     super.awakeFromNib()
     configDateTextField()
-    datePickerView.date = date ?? NSDate()
   }
 
   private func configDateTextField() {
@@ -32,6 +43,8 @@ class PersonDetailsDateInputTableViewCell: UITableViewCell {
     dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
     dateTextField.text = dateFormatter.stringFromDate(sender.date)
     date = datePickerView.date
+    delegate?.personDetailsDateInputTableViewCell(self, didChangeDateValue: date!)
+    dateTextField.resignFirstResponder()
   }
 
   override func setSelected(selected: Bool, animated: Bool) {

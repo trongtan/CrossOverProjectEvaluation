@@ -8,10 +8,16 @@
 
 import UIKit
 
+protocol PersonDetailsSexInputTableViewCellDelegate: class {
+  func personDetailsSexInputTableViewCell(cell: PersonDetailsSexInputTableViewCell, didChangeValue value: String)
+}
+
 class PersonDetailsSexInputTableViewCell: UITableViewCell {
   @IBOutlet weak var sexSegment: UISegmentedControl!
 
+  weak var delegate: PersonDetailsSexInputTableViewCellDelegate?
+
   @IBAction func sexSegmentDidChangeValue(sender: UISegmentedControl) {
-    print(sexSegment.titleForSegmentAtIndex(sender.selectedSegmentIndex))
+    delegate?.personDetailsSexInputTableViewCell(self, didChangeValue: sexSegment.titleForSegmentAtIndex(sender.selectedSegmentIndex)!)
   }
 }

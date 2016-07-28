@@ -16,8 +16,8 @@ class Person: Object, Mappable {
   dynamic var id = 0
   dynamic var name = ""
   dynamic var ssn = ""
-  dynamic var birthDate: NSDate?
-  dynamic var deathDate: NSDate?
+  dynamic var birthDate = NSDate()
+  dynamic var deathDate =  NSDate()
   dynamic var sex = ""
 
   required init() {

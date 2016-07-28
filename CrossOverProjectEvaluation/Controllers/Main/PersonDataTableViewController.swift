@@ -67,6 +67,7 @@ class PersonDataTableViewController: UIViewController {
   }
 
   let PersonDetailsTextInputTableViewCell = "PersonDetailsTextInputTableViewCell"
+  var person: Person = Person()
 
   @IBOutlet weak var tableView: UITableView!
 
@@ -109,43 +110,37 @@ extension PersonDataTableViewController: UITableViewDataSource {
 
   private func infosCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(PersonDetailsTextInputTableViewCell, forIndexPath: indexPath)
-//    var textLabel: String?
-//    var valueLabel: String?
-//
-//    let infoRow = InfoSection(rawValue: indexPath.row)
-//    switch infoRow {
-//    case .Some(.name):
-//      textLabel = infoRow!.description
-//    case .Some(.ssn):
-//      textLabel = infoRow!.description
-//    default:
-//      textLabel = ""
-//    }
 
     cell.textLabel?.text = InfoSection(rawValue: indexPath.row)?.description
+
+    let infoRow = InfoSection(rawValue: indexPath.row)
+    switch infoRow {
+    case .Some(.name): cell.detailTextLabel?.text = person.name
+    case .Some(.ssn): cell.detailTextLabel?.text = person.ssn
+    default: break
+    }
+
     return cell
   }
 
   private func datesCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(String(PersonDetailsDateInputTableViewCell), forIndexPath: indexPath) as! PersonDetailsDateInputTableViewCell
-//    var textLabel: String?
-//    var valueLabel: String?
-
-//    let dateRow = DateSection(rawValue: indexPath.row)
-//    switch dateRow {
-//    case .Some(.birthDate):
-//      textLabel = dateRow!.description
-//    case .Some(.deathDate):
-//      textLabel = dateRow!.description
-//    default:
-//      textLabel = ""
-//    }
     cell.customLabel?.text = DateSection(rawValue: indexPath.row)?.description
+    cell.delegate = self
+
+    let dateRow = DateSection(rawValue: indexPath.row)
+    switch dateRow {
+    case .Some(.birthDate): cell.date = person.birthDate
+    case .Some(.deathDate): cell.date = person.deathDate
+    default: break
+    }
+
     return cell
   }
 
   private func sexCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier(String(PersonDetailsSexInputTableViewCell), forIndexPath: indexPath)
+    let cell = tableView.dequeueReusableCellWithIdentifier(String(PersonDetailsSexInputTableViewCell), forIndexPath: indexPath) as! PersonDetailsSexInputTableViewCell
+    cell.delegate = self
     return cell
   }
 }
@@ -155,40 +150,25 @@ extension PersonDataTableViewController: UITableViewDelegate {
     let section = PersonDataSection(rawValue: indexPath.section)
     switch section {
     case .Some(.info) : handleInfoRowsForIndexPath(indexPath)
-    case .Some(.date) : break
-    case .Some(.sex) : break
     default: break
     }
 
   }
 
   private func handleInfoRowsForIndexPath(indexPath: NSIndexPath) {
-    var oldValue: String?
-    var newValue: String?
-
     let infoRow = InfoSection(rawValue: indexPath.row)
     switch infoRow {
     case .Some(.name):
-      presentInputView("Enter Name", message: "Please enter his/her name!", placeHolder: nil, value: oldValue) { inputValue in
-        newValue = inputValue
+      presentInputView("Enter Name", message: "Please enter his/her name!", placeHolder: nil, value: person.name) { inputValue in
+        self.person.name = inputValue
+        self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
       }
 
     case .Some(.ssn):
-      presentInputView("Enter SSN Number", message: "Please enter his/her SSN Number!", placeHolder: nil, value: oldValue) { inputValue in
-        newValue = inputValue
+      presentInputView("Enter SSN Number", message: "Please enter his/her SSN Number!", placeHolder: nil, value: person.ssn) { inputValue in
+        self.person.ssn = inputValue
+        self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
       }
-    default: break
-    }
-  }
-
-  private func handleDatesRowsForIndexPath(indexPath: NSIndexPath) {
-    var oldValue: NSDate?
-    var newValue: NSDate?
-
-    let dateRow = DateSection(rawValue: indexPath.row)
-    switch dateRow {
-    case .Some(.birthDate): break
-    case .Some(.deathDate): break
     default: break
     }
   }
@@ -197,5 +177,28 @@ extension PersonDataTableViewController: UITableViewDelegate {
     self.presentAlertTextField(title, message: message, value: value, textFieldPlaceHolder: placeHolder) { inputValue in
       completion?(inputValue)
     }
+  }
+}
+
+extension PersonDataTableViewController: PersonDetailsDateInputTableViewCellDelegate {
+  func personDetailsDateInputTableViewCell(cell: PersonDetailsDateInputTableViewCell, didChangeDateValue date: NSDate) {
+    if let indexPath = tableView.indexPathForCell(cell) {
+      handleDatesRowsForIndexPath(indexPath, date: date)
+    }
+  }
+
+  private func handleDatesRowsForIndexPath(indexPath: NSIndexPath, date: NSDate) {
+    let dateRow = DateSection(rawValue: indexPath.row)
+    switch dateRow {
+    case .Some(.birthDate): self.person.birthDate = date
+    case .Some(.deathDate): self.person.deathDate = date
+    default: break
+    }
+  }
+}
+
+extension PersonDataTableViewController: PersonDetailsSexInputTableViewCellDelegate {
+  func personDetailsSexInputTableViewCell(cell: PersonDetailsSexInputTableViewCell, didChangeValue value: String) {
+    person.sex = value
   }
 }

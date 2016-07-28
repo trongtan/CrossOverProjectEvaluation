@@ -40,6 +40,7 @@
 		ECFADDDC1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFADDDA1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib */; };
 		ECFADDDF1D49F21600D8F01B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDDE1D49F21600D8F01B /* Person.swift */; };
 		ECFADDE21D49F3BB00D8F01B /* TFDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDE11D49F3BB00D8F01B /* TFDateFormatter.swift */; };
+		ECFADDE51D49F54A00D8F01B /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDE41D49F54A00D8F01B /* NSDate+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		ECFADDDA1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonDetailsDateInputTableViewCell.xib; sourceTree = "<group>"; };
 		ECFADDDE1D49F21600D8F01B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ECFADDE11D49F3BB00D8F01B /* TFDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFDateFormatter.swift; sourceTree = "<group>"; };
+		ECFADDE41D49F54A00D8F01B /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		EC8BC4681D45C4F2005D637C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ECFADDE41D49F54A00D8F01B /* NSDate+Extension.swift */,
 				EC8BC4691D45C517005D637C /* NSUserDefaults+Extension.swift */,
 				EC8BC46B1D45C552005D637C /* Object+Extension.swift */,
 				EC8BC46C1D45C552005D637C /* Realm+Extension.swift */,
@@ -622,6 +625,7 @@
 				EC9B88E11D45CCDB00F8433E /* UINavigationController+Extension.swift in Sources */,
 				EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */,
 				ECFADDDB1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.swift in Sources */,
+				ECFADDE51D49F54A00D8F01B /* NSDate+Extension.swift in Sources */,
 				EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */,
 				EC8BC4321D45BBF2005D637C /* AppDelegate.swift in Sources */,
 				EC8BC47E1D45CB9A005D637C /* UIViewController+Extension.swift in Sources */,
