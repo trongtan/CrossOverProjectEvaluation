@@ -8,6 +8,7 @@ def common_pods
   pod 'SDCAlertView'
   pod 'SlideMenuControllerSwift'
   pod 'Firebase'
+  pod 'ObjectMapper'
 end
 
 def testing_pods
