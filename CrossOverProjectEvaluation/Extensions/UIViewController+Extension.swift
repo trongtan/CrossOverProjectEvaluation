@@ -56,6 +56,7 @@ extension UIViewController {
       textField.placeholder = textFieldPlaceHolder
       textField.secureTextEntry = secureTextEntry
       textField.text = value
+      textField.accessibilityLabel = "Alert Text Field"
     })
     presentViewController(alert, animated: true, completion: nil)
   }

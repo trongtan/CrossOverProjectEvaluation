@@ -82,6 +82,11 @@ class PersonDataTableViewController: UIViewController {
     tableView.accessibilityLabel = "Person Details: Table View Accessibility Label"
     tableView.accessibilityIdentifier = "Person Details: Table View Accessibility Identifier"
   }
+
+  @IBAction func saveButtonPressed(sender: AnyObject) {
+
+  }
+
 }
 
 extension PersonDataTableViewController: UITableViewDataSource {
@@ -141,6 +146,7 @@ extension PersonDataTableViewController: UITableViewDataSource {
   private func sexCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier(String(PersonDetailsSexInputTableViewCell), forIndexPath: indexPath) as! PersonDetailsSexInputTableViewCell
     cell.delegate = self
+    cell.sexSegment.selectedSegmentIndex = person.sex == "Male" ? 0 : 1
     return cell
   }
 }

@@ -10,7 +10,9 @@
 import Quick
 import Nimble
 import RealmSwift
+import Fakery
 
+let faker = Faker()
 class BaseSpec: QuickSpec {
   override func setUp() {
     super.setUp()

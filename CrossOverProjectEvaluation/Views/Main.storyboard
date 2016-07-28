@@ -51,11 +51,28 @@
                                     <outlet property="delegate" destination="3Rg-2h-XhN" id="sDB-8j-aQa"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Miz-go-Twr">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.34901960780000002" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Person Details: Save Button Accessibility Label"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8Cj-14-IhW"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="3Rg-2h-XhN" eventType="touchUpInside" id="HNx-sq-yt6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Miz-go-Twr" secondAttribute="trailing" id="Fj0-nC-HgL"/>
+                            <constraint firstItem="Miz-go-Twr" firstAttribute="leading" secondItem="pJ0-bJ-AHI" secondAttribute="leading" id="H1y-LL-eid"/>
                             <constraint firstItem="4Fv-ak-HlS" firstAttribute="leading" secondItem="pJ0-bJ-AHI" secondAttribute="leading" id="OMg-nA-EC9"/>
                             <constraint firstItem="4Fv-ak-HlS" firstAttribute="top" secondItem="pNH-KS-UhI" secondAttribute="bottom" id="QH1-yG-NSN"/>
+                            <constraint firstItem="Bgw-pZ-X85" firstAttribute="top" secondItem="Miz-go-Twr" secondAttribute="bottom" id="Sml-hH-YjS"/>
                             <constraint firstItem="Bgw-pZ-X85" firstAttribute="top" secondItem="4Fv-ak-HlS" secondAttribute="bottom" id="iLm-G4-O98"/>
                             <constraint firstAttribute="trailing" secondItem="4Fv-ak-HlS" secondAttribute="trailing" id="nUf-QW-HQj"/>
                         </constraints>

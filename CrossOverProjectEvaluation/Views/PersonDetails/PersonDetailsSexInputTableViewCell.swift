@@ -17,6 +17,10 @@ class PersonDetailsSexInputTableViewCell: UITableViewCell {
 
   weak var delegate: PersonDetailsSexInputTableViewCellDelegate?
 
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    sexSegment.accessibilityLabel = "Person Details Sex Input Table View Cell : Sex Segment"
+  }
   @IBAction func sexSegmentDidChangeValue(sender: UISegmentedControl) {
     delegate?.personDetailsSexInputTableViewCell(self, didChangeValue: sexSegment.titleForSegmentAtIndex(sender.selectedSegmentIndex)!)
   }
