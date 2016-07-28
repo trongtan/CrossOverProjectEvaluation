@@ -21,6 +21,10 @@ extension UIViewController {
     return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(ContainerViewController)) as! ContainerViewController
   }
 
+  static func tabBarViewController() -> TabBarViewController {
+    return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(TabBarViewController)) as! TabBarViewController
+  }
+
   static func mainViewController() -> MainViewController {
     return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(MainViewController)) as! MainViewController
   }
@@ -28,12 +32,18 @@ extension UIViewController {
   static func menuViewController() -> MenuViewController {
     return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(MenuViewController)) as! MenuViewController
   }
+
+  static func personDataTableViewController() -> PersonDataTableViewController {
+    return UIStoryboard.mainStoryboard().instantiateViewControllerWithIdentifier(String(PersonDataTableViewController)) as! PersonDataTableViewController
+  }
+
+
 }
 
 // MARK: Utils funcs
 
 extension UIViewController {
-  func presentAlertTextField(title: String, message: String, titleButtonAction: String = "OK", textFieldPlaceHolder: String = "Enter text:", secureTextEntry: Bool = false, completion: ((String) -> Void)?) {
+  func presentAlertTextField(title: String, message: String, titleButtonAction: String = "OK", value: String?, textFieldPlaceHolder: String? = "Enter text:", secureTextEntry: Bool = false, completion: ((String) -> Void)?) {
     let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
     let action = UIAlertAction(title: titleButtonAction, style: .Default) {
       _ in
@@ -45,6 +55,7 @@ extension UIViewController {
     alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
       textField.placeholder = textFieldPlaceHolder
       textField.secureTextEntry = secureTextEntry
+      textField.text = value
     })
     presentViewController(alert, animated: true, completion: nil)
   }

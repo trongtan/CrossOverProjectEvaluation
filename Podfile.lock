@@ -2,6 +2,23 @@ PODS:
   - Alamofire (3.4.1)
   - Fakery (1.3.0):
     - SwiftyJSON
+  - Firebase (3.3.0):
+    - Firebase/Core (= 3.3.0)
+  - Firebase/Analytics (3.3.0):
+    - FirebaseAnalytics (= 3.2.1)
+  - Firebase/Core (3.3.0):
+    - Firebase/Analytics (= 3.3.0)
+  - FirebaseAnalytics (3.2.1):
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleUtilities (~> 1.3)
+  - FirebaseInstanceID (1.0.7)
+  - GoogleInterchangeUtilities (1.2.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.1.1)
+  - GoogleUtilities (1.3.1):
+    - GoogleSymbolUtilities (~> 1.0)
   - KIF (3.4.2):
     - KIF/Core (= 3.4.2)
   - KIF/Core (3.4.2)
@@ -28,6 +45,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Fakery
+  - Firebase
   - KIF (~> 3.0)
   - Mockingjay (= 1.1.1)
   - Nimble
@@ -40,6 +58,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   Fakery: 8e6f7da2feb311a90a956ab9b9b2ce72106d1787
+  Firebase: 6250071f0e2440a5c4c67b8cb6b868f868237ac3
+  FirebaseAnalytics: 0fd6532cb2c3d03cd5cf26ad295ccb091efd3104
+  FirebaseInstanceID: a9d923f3d0b6fbf9fac89310860357aaadc34be5
+  GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
+  GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
+  GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   KIF: b518c9831453abea5afdbbde3908ec47832d6d56
   Mockingjay: 757f80abc947b5ec2918b1bb14f3066574720430
   Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
@@ -52,6 +76,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   URITemplate: 398a48d6559e23b77bd41176b675b017ad1fc959
 
-PODFILE CHECKSUM: 1eaa400354395cfb8e0dc415657023a6de976571
+PODFILE CHECKSUM: 6032b65c9b52771487e83796fc0ec22770811cbd
 
 COCOAPODS: 1.0.1

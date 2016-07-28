@@ -13,18 +13,28 @@ import Nimble
 class HomeSpec: BaseUISpec {
   override func spec() {
     super.spec()
+    let tableViewAccessibilityLabel = "Person Details: Table View Accessibility Label"
+    let tableViewAccessibilityIdentifier = "Person Details: Table View Accessibility Identifier"
 
-    describe("Menu") {
+    describe("there're no data on server") {
       beforeEach {
       }
 
-      context("click on the hamburger button") {
+      func checkUserInputItems() {
+        self.tester().waitForViewWithAccessibilityLabel(tableViewAccessibilityLabel)
+        self.tester().waitForViewWithAccessibilityLabel("Name")
+        self.tester().waitForViewWithAccessibilityLabel("SSN")
+        self.tester().waitForViewWithAccessibilityLabel("Birth Date")
+        self.tester().waitForViewWithAccessibilityLabel("Death Date")
+        self.tester().waitForViewWithAccessibilityLabel("Sex")
+      }
+
+      context("user have never input their data before") {
         beforeEach {
-          self.tester().tapViewWithAccessibilityLabel("Main: Menu Button Accessibility Label")
         }
 
-        it("open menu") {
-          self.tester().waitForViewWithAccessibilityLabel("Menu")
+        it("opens user data input screen") {
+          checkUserInputItems()
         }
       }
     }

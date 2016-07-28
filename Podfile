@@ -7,6 +7,7 @@ def common_pods
   pod 'SnapKit'
   pod 'SDCAlertView'
   pod 'SlideMenuControllerSwift'
+  pod 'Firebase'
 end
 
 def testing_pods
@@ -14,6 +15,7 @@ def testing_pods
   pod 'Nimble'
   pod 'Mockingjay', '1.1.1'
   pod 'Fakery'
+  pod 'Firebase'
 end
 
 target 'CrossOverProjectEvaluation' do

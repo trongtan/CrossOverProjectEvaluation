@@ -31,6 +31,13 @@
 		ECFADDC41D47071100D8F01B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDC11D47071100D8F01B /* ContainerViewController.swift */; };
 		ECFADDC51D47071100D8F01B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDC21D47071100D8F01B /* MainViewController.swift */; };
 		ECFADDC61D47071100D8F01B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDC31D47071100D8F01B /* MenuViewController.swift */; };
+		ECFADDCD1D486A2B00D8F01B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDCC1D486A2B00D8F01B /* TabBarViewController.swift */; };
+		ECFADDCF1D49BA6800D8F01B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECFADDCE1D49BA6800D8F01B /* GoogleService-Info.plist */; };
+		ECFADDD11D49BD9600D8F01B /* PersonDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDD01D49BD9600D8F01B /* PersonDataTableViewController.swift */; };
+		ECFADDD71D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDD51D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.swift */; };
+		ECFADDD81D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFADDD61D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.xib */; };
+		ECFADDDB1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDD91D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.swift */; };
+		ECFADDDC1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECFADDDA1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +93,13 @@
 		ECFADDC11D47071100D8F01B /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		ECFADDC21D47071100D8F01B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ECFADDC31D47071100D8F01B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		ECFADDCC1D486A2B00D8F01B /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		ECFADDCE1D49BA6800D8F01B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECFADDD01D49BD9600D8F01B /* PersonDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDataTableViewController.swift; sourceTree = "<group>"; };
+		ECFADDD51D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsSexInputTableViewCell.swift; sourceTree = "<group>"; };
+		ECFADDD61D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonDetailsSexInputTableViewCell.xib; sourceTree = "<group>"; };
+		ECFADDD91D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsDateInputTableViewCell.swift; sourceTree = "<group>"; };
+		ECFADDDA1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonDetailsDateInputTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +185,7 @@
 				EC8BC4381D45BBF2005D637C /* Assets.xcassets */,
 				EC8BC43A1D45BBF2005D637C /* LaunchScreen.storyboard */,
 				EC8BC43D1D45BBF2005D637C /* Info.plist */,
+				ECFADDCE1D49BA6800D8F01B /* GoogleService-Info.plist */,
 			);
 			path = CrossOverProjectEvaluation;
 			sourceTree = "<group>";
@@ -253,6 +268,7 @@
 		EC9B88E71D45F63900F8433E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECFADDD21D49C58B00D8F01B /* PersonDetails */,
 				EC9B88EC1D45F6CD00F8433E /* Main.storyboard */,
 				EC9B88EE1D45F70200F8433E /* Authentication.storyboard */,
 			);
@@ -273,8 +289,21 @@
 				ECFADDC11D47071100D8F01B /* ContainerViewController.swift */,
 				ECFADDC21D47071100D8F01B /* MainViewController.swift */,
 				ECFADDC31D47071100D8F01B /* MenuViewController.swift */,
+				ECFADDCC1D486A2B00D8F01B /* TabBarViewController.swift */,
+				ECFADDD01D49BD9600D8F01B /* PersonDataTableViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		ECFADDD21D49C58B00D8F01B /* PersonDetails */ = {
+			isa = PBXGroup;
+			children = (
+				ECFADDD51D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.swift */,
+				ECFADDD61D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.xib */,
+				ECFADDD91D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.swift */,
+				ECFADDDA1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib */,
+			);
+			path = PersonDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,8 +421,11 @@
 			files = (
 				EC8BC43C1D45BBF2005D637C /* LaunchScreen.storyboard in Resources */,
 				EC9B88ED1D45F6CD00F8433E /* Main.storyboard in Resources */,
+				ECFADDCF1D49BA6800D8F01B /* GoogleService-Info.plist in Resources */,
 				EC8BC4391D45BBF2005D637C /* Assets.xcassets in Resources */,
 				EC9B88EF1D45F70200F8433E /* Authentication.storyboard in Resources */,
+				ECFADDDC1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.xib in Resources */,
+				ECFADDD81D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,12 +589,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9B88F21D45F84E00F8433E /* SignInViewController.swift in Sources */,
+				ECFADDD71D49C5D800D8F01B /* PersonDetailsSexInputTableViewCell.swift in Sources */,
 				ECFADDC51D47071100D8F01B /* MainViewController.swift in Sources */,
 				EC8BC46D1D45C552005D637C /* Object+Extension.swift in Sources */,
 				ECFADDC61D47071100D8F01B /* MenuViewController.swift in Sources */,
+				ECFADDCD1D486A2B00D8F01B /* TabBarViewController.swift in Sources */,
+				ECFADDD11D49BD9600D8F01B /* PersonDataTableViewController.swift in Sources */,
 				EC8BC46A1D45C517005D637C /* NSUserDefaults+Extension.swift in Sources */,
 				EC9B88E11D45CCDB00F8433E /* UINavigationController+Extension.swift in Sources */,
 				EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */,
+				ECFADDDB1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.swift in Sources */,
 				EC8BC46E1D45C552005D637C /* Realm+Extension.swift in Sources */,
 				EC8BC4321D45BBF2005D637C /* AppDelegate.swift in Sources */,
 				EC8BC47E1D45CB9A005D637C /* UIViewController+Extension.swift in Sources */,
