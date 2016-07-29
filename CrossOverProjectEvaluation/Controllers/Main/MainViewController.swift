@@ -10,29 +10,7 @@ import UIKit
 import RATreeView
 import Realm
 import RealmSwift
-
-//class DataObject
-//{
-//  let name : String
-//  private(set) var children : [DataObject]
-//
-//  init(name : String, children: [DataObject]) {
-//    self.name = name
-//    self.children = children
-//  }
-//
-//  convenience init(name : String) {
-//    self.init(name: name, children: [DataObject]())
-//  }
-//
-//  func addChild(child : DataObject) {
-//    self.children.append(child)
-//  }
-//
-//  func removeChild(child : DataObject) {
-//    self.children = self.children.filter( {$0 !== child})
-//  }
-//}
+import SnapKit
 
 class MainViewController: UIViewController, RATreeViewDelegate, RATreeViewDataSource {
   var treeView: RATreeView?
@@ -41,8 +19,9 @@ class MainViewController: UIViewController, RATreeViewDelegate, RATreeViewDataSo
 
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
-
-    data = MainViewController.commonInit()
+    let relationship1 = Relationship(name: "self", person: Person(), parent: nil)
+    relationship1.save()
+    data = [relationship1]
     setupTreeView()
 
 
@@ -51,12 +30,17 @@ class MainViewController: UIViewController, RATreeViewDelegate, RATreeViewDataSo
   func setupTreeView() -> Void {
     treeView = RATreeView(frame: view.bounds)
     treeView?.registerNib(UINib.init(nibName: "TreeTableViewCell", bundle: nil), forCellReuseIdentifier: "TreeTableViewCell")
-    treeView?.autoresizingMask = UIViewAutoresizing(rawValue:UIViewAutoresizing.FlexibleWidth.rawValue | UIViewAutoresizing.FlexibleHeight.rawValue)
     treeView?.delegate = self
     treeView?.dataSource = self
     treeView?.treeFooterView = UIView()
     treeView?.backgroundColor = UIColor.clearColor()
+    treeView?.expandRowForItem(data.first)
     view.addSubview(treeView!)
+    treeView?.snp_makeConstraints { make in
+      make.top.equalTo(74)
+      make.bottom.equalTo(44)
+      make.leading.trailing.equalTo(0)
+    }
   }
 
   func updateNavigationBarButtons() -> Void {
@@ -85,28 +69,35 @@ class MainViewController: UIViewController, RATreeViewDelegate, RATreeViewDataSo
     if let item = item as? Relationship {
       return item.children[index]
     } else {
-      return data[index] as AnyObject
+      return data[index] as Relationship
     }
   }
 
   func treeView(treeView: RATreeView, cellForItem item: AnyObject?) -> UITableViewCell {
     let cell = treeView.dequeueReusableCellWithIdentifier("TreeTableViewCell") as! TreeTableViewCell
-    let item = item as! Relationship
+
+    guard let item = item as? Relationship else { return cell }
 
     let level = treeView.levelForCellForItem(item)
-    let detailsText = "Number of children \(item.children.count)"
+    let title = "\(item.person!.name)(\(item.children.count))"
+    let relationshipName = item.parent != nil ? "\(item.name)" : ""
+
     cell.selectionStyle = .None
-    cell.setup(withTitle: item.name, detailsText: detailsText, level: level, additionalButtonHidden: false)
-//    cell.additionButtonActionBlock = { [weak treeView] cell in
-//      guard let treeView = treeView else {
-//        return;
-//      }
-//      let item = treeView.itemForCell(cell) as! Relationship
-//      let newItem = Relationship(name: "Added value")
-//      item.addChild(newItem)
-//      treeView.insertItemsAtIndexes(NSIndexSet.init(index: 0), inParent: item, withAnimation: RATreeViewRowAnimationNone);
-//      treeView.reloadRowsForItems([item], withRowAnimation: RATreeViewRowAnimationNone)
-//    }
+    cell.setup(withTitle: title, detailsText: relationshipName, level: level, additionalButtonHidden: false)
+    cell.additionButtonActionBlock = { [weak treeView] cell in
+      guard let treeView = treeView, item = treeView.itemForCell(cell) as? Relationship else {
+        return;
+      }
+
+      let newItem = Relationship(name: "self", person: Person(), parent: item)
+
+      newItem.save()
+
+      treeView.beginUpdates()
+      treeView.insertItemsAtIndexes(NSIndexSet.init(index: 0), inParent: item, withAnimation: RATreeViewRowAnimationNone)
+      treeView.endUpdates()
+      treeView.reloadRowsForItems([item], withRowAnimation: RATreeViewRowAnimationAutomatic)
+    }
     return cell
   }
 

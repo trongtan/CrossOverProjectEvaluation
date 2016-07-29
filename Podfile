@@ -10,6 +10,7 @@ def common_pods
   pod 'Firebase'
   pod 'ObjectMapper'
   pod 'RATreeView'
+  pod 'IMTreeView'
 end
 
 def testing_pods

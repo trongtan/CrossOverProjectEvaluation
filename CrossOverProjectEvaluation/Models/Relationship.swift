@@ -33,6 +33,14 @@ class Relationship: Object, Mappable {
     return sameLevelChildrent
   }
 
+  var parent: Relationship? {
+    return self.realm?.objectForPrimaryKey(Relationship.self, key: parentRawValue)
+  }
+
+  var person: Person? {
+     return self.realm?.objectForPrimaryKey(Person.self, key: personRawValue)
+  }
+
   required init() {
     super.init()
   }

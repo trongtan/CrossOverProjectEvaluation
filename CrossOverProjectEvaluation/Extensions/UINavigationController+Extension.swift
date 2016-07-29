@@ -23,10 +23,10 @@ extension UINavigationController {
 //  }
 
   func redirectAfterAuthenticationAnimated(animated: Bool) {
-    if viewControllers.count == 0 {
-      // add signInViewController into viewControllers stack to pop back later on
-      pushViewController(UIViewController.signInViewController(), animated: false)
-    }
+//    if viewControllers.count == 0 {
+//      // add signInViewController into viewControllers stack to pop back later on
+//      pushViewController(UIViewController.signInViewController(), animated: false)
+//    }
     pushViewController(UIViewController.containerViewController(), animated: animated)
   }
 }

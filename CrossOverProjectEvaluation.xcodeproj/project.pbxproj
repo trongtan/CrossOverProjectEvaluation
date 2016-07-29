@@ -48,6 +48,7 @@
 		ECFADDF21D4A13F700D8F01B /* PersonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDF11D4A13F700D8F01B /* PersonBuilder.swift */; };
 		ECFADDF31D4A13FA00D8F01B /* PersonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDF11D4A13F700D8F01B /* PersonBuilder.swift */; };
 		ECFADDF51D4A19ED00D8F01B /* RelationshipBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDF41D4A19ED00D8F01B /* RelationshipBuilder.swift */; };
+		ECFADDF71D4AF9F000D8F01B /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFADDF61D4AF9F000D8F01B /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		ECFADDEF1D4A130500D8F01B /* RelationshipSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipSpec.swift; sourceTree = "<group>"; };
 		ECFADDF11D4A13F700D8F01B /* PersonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonBuilder.swift; sourceTree = "<group>"; };
 		ECFADDF41D4A19ED00D8F01B /* RelationshipBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipBuilder.swift; sourceTree = "<group>"; };
+		ECFADDF61D4AF9F000D8F01B /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +320,7 @@
 				ECFADDC31D47071100D8F01B /* MenuViewController.swift */,
 				ECFADDCC1D486A2B00D8F01B /* TabBarViewController.swift */,
 				ECFADDD01D49BD9600D8F01B /* PersonDataTableViewController.swift */,
+				ECFADDF61D4AF9F000D8F01B /* GraphViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				ECFADDE21D49F3BB00D8F01B /* TFDateFormatter.swift in Sources */,
 				ECFADDD11D49BD9600D8F01B /* PersonDataTableViewController.swift in Sources */,
 				EC8BC46A1D45C517005D637C /* NSUserDefaults+Extension.swift in Sources */,
+				ECFADDF71D4AF9F000D8F01B /* GraphViewController.swift in Sources */,
 				EC9B88E11D45CCDB00F8433E /* UINavigationController+Extension.swift in Sources */,
 				EC8BC4701D45C55E005D637C /* UIStoryboard+Extension.swift in Sources */,
 				ECFADDDB1D49E5E700D8F01B /* PersonDetailsDateInputTableViewCell.swift in Sources */,

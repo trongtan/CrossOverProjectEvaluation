@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      FIRApp.configure()
 
     let navigationController = window?.rootViewController as! UINavigationController
-    if true {
-      navigationController.redirectAfterAuthenticationAnimated(false)
+    if Object.all(Person).count > 0 {
+      let tabBarController = UIViewController.tabBarViewController()
+      navigationController.pushViewController(tabBarController, animated: false)
     }
 
     return true

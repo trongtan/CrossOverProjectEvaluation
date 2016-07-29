@@ -84,7 +84,8 @@ class PersonDataTableViewController: UIViewController {
   }
 
   @IBAction func saveButtonPressed(sender: AnyObject) {
-
+    person.save()
+    navigationController?.popToRootViewControllerAnimated(true)
   }
 
 }
